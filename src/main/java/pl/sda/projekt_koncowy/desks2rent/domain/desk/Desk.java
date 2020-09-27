@@ -14,8 +14,8 @@ import javax.validation.constraints.NotEmpty;
 public class Desk {
     private Integer id;
     @NotEmpty(message = "number cannot be empty")
-    private Integer desk_number;
+    private Integer desknumber;
     private String floor;
     private String room;
-    private boolean availbility;
+    private Boolean availbility;
 }
