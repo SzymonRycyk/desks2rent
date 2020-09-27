@@ -1,20 +1,17 @@
-package pl.sda.projekt_koncowy.desks2rent.domain.desk;
+package pl.sda.projekt_koncowy.desks2rent.external;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.validation.constraints.NotEmpty;
-
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
 @Setter
-public class desk {
+public class Desk {
     private Integer id;
-    @NotEmpty(message = "number cannot be empty")
-    private Integer desk_number;
+    private Integer number;
     private String floor;
     private String room;
     private boolean availbility;
