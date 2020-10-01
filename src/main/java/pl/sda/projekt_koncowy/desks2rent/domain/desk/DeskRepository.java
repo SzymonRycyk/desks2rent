@@ -11,7 +11,7 @@ public interface DeskRepository {
 
     void delete(int id);
 
-    static Optional<Desk> getOne(int id);
+    Optional<Desk> getOne(int id);
 
     List<Desk> getAll();
 

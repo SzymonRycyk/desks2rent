@@ -26,11 +26,12 @@ public class DeskEntity {
 
     private String room;
 
-    private boolean availbility;
+    private Boolean availbility;
 
     public void updateFromDomain(Desk desk) {
         this.desknumber = desk.getDesknumber();
         this.floor = desk.getFloor();
         this.room = desk.getRoom();
+        this.availbility=desk.getAvailbility();
     }
 }
