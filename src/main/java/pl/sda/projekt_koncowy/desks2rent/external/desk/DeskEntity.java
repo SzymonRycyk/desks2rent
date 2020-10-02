@@ -28,6 +28,9 @@ public class DeskEntity {
 
     private Boolean availbility;
 
+    //@ManyToMany(mappedBy = "desk")
+    //private Set<RentEntity> rent;
+
     public void updateFromDomain(Desk desk) {
         this.desknumber = desk.getDesknumber();
         this.floor = desk.getFloor();

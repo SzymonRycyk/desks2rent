@@ -44,7 +44,4 @@ public class DeskService {
         deskRepository.delete(id);
     }
 
-    public Optional<Desk> getByDesknumber(int id){
-        return deskRepository.getByDesknumber(id);
-    }
 }
